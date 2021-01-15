@@ -20,7 +20,7 @@ def slowprint(s):
 
 def ipinfo():
        os.system("figlet DM | lolcat")
-       ip=input(" Enter IP Address : \034[1;31m ")
+       ip=input(" Enter victim IP Address : \033[1;31m ")
        url = ("http://ip-api.com/json/")
        response = urllib.request.urlopen(url + ip)
        data = response.read()
