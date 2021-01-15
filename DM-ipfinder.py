@@ -19,8 +19,8 @@ def slowprint(s):
 
 
 def ipinfo():
-       os.system("figlet HAWYAR KAM SURU | lolcat")
-       ip=input(" Enter IP Address : \033[1;32m ")
+       os.system("figlet DM | lolcat")
+       ip=input(" Enter IP Address : \034[1;31m ")
        url = ("http://ip-api.com/json/")
        response = urllib.request.urlopen(url + ip)
        data = response.read()
@@ -28,9 +28,9 @@ def ipinfo():
        os.system("clear")
 
        print ("\033[1;32m\007\n")
-       os.system("figlet IP-tracer | lolcat")
+       os.system("figlet DM-IP | lolcat")
        slowprint("\033[1;36m =====================================")
-       slowprint("\033[1;33m|      .     IP Info..               |")
+       slowprint("\033[1;33m|      .    DM  IP Info..            |")
        slowprint("\033[1;36m =====================================")
        slowprint("\033[1;36m" + "\n IP          : \033[1;31m " + values['query'])
        slowprint("\033[1;36m" + " Status      : \033[1;37m " + values['status'])
@@ -39,7 +39,7 @@ def ipinfo():
        slowprint("\033[1;36m" + " Date & Time : \033[1;30m " + datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
        slowprint("\033[1;36m" + " City        : \033[1;34m " + values['city'])
        slowprint("\033[1;36m" + " ISP         : \033[1;32m " + values['isp'])
-       slowprint("\033[1;36m" + " Lat,Lon     : \033[1;32m " + str(values['lat']) + "," + str(values['lon']))
+       slowprint("\033[1;36m" + " Lat,Lon     : \033[1;31m " + str(values['lat']) + "," + str(values['lon']))
        slowprint("\033[1;36m" + " ZIPCODE     : \033[1;35m " + values['zip'])
        slowprint("\033[1;36m" + " TimeZone    : \033[1;32m " + values['timezone'])
        slowprint("\033[1;36m" + " AS          : \033[1;33m " + values['as'] + "\n")
@@ -49,9 +49,9 @@ def ipinfo():
        slowprint("\033[1;31m =====================================")
  
        print (" ")
-       slowprint("\033[1;91mPress\033[1;36m 5\033[1;91m To Continue")
+       slowprint("\033[1;91mPress\033[1;31m 5\033[1;91m To Continue")
        print (" ")
-       rr = input("\033[1;33m[+] IPInformation >>\033[1;32m")
+       rr = input("\033[1;33m[+] DM-IPInformation >>\033[1;32m")
        if rr == " ":
                 os.system("clear")
                 return main()
