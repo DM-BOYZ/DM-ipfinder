@@ -1,3 +1,4 @@
+clear
 apt update
 
 apt install python -y
@@ -7,5 +8,5 @@ apt install figlet -y
 gem install lolcat
 echo '
 ╒══╩╩━╩╩═══════════╕
-🌾python3 iptracer.py 🌾
+🌾python3 DM-ipfinder.py 🌾
 ╘══════════════════╛'
