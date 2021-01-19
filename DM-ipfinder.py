@@ -19,7 +19,14 @@ def slowprint(s):
 
 
 def ipinfo():
-       os.system("figlet DM | lolcat")
+    print ("\033[1;32m\007\n")
+    slowprint("\033[1;32m██████╗░███╗░░░███╗")
+    slowprint("\033[1;32m██╔══██╗████╗░████║")
+    slowprint("\033[1;32m██║░░██║██╔████╔██║")
+    slowprint("\033[1;32m██║░░██║██║╚██╔╝██║")
+    slowprint("\033[1;32m██████╔╝██║░╚═╝░██║")
+    slowprint("\033[1;32m╚═════╝░╚═╝░░░░░╚═╝")
+    print (" ")
        ip=input(" Enter victim IP Address : \033[1;31m ")
        url = ("http://ip-api.com/json/")
        response = urllib.request.urlopen(url + ip)
